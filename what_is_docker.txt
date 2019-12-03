@@ -1,0 +1,32 @@
+so docker is like a virtural machine that contains all of your 
+dependencies and things you should install 
+
+-->it prevents errors from happening when you are changing your code from 
+one machine to another
+
+--->example :  i installed django 2.7  and i have a database postgres
+so when i install copy my code and try to install django and postgres there
+migh be some changes in them so what i will have to do is to make a docker
+compose file (container that handles this virtual machine that contains
+dependencies )
+
+so the only thing you need to do is install docker and then use it 
+to maintain your images (virtual machines for your code bases )
+so that when someone else wants to work on that same project 
+your are working on he will be able to use the docker-compose file 
+to just install the dependencies and make a virtual machine 
+
+
+---->you always need to have a Dockerfile and a requirements file 
+so that you specify whiech commands you want to execute on the image 
+
+and then you need to have requirements.txt that contains the name of libraries
+and shit you are using to make your code base
+
+also you need docker-compose.yml file to configure all the docker image that
+you wokrking with so when you run that file all the image run together in sync
+thats why you need to synchronise your work and make it efficient using this
+configuration ! thats so cool and sweet and really adorable to be offred by
+some developers like this which really really able to make your configurations
+and automate starting servers without worrking the fuck that happens whith
+dependencies  
