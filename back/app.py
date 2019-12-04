@@ -50,7 +50,7 @@ def edit_student(student_id):
             student["last_name"]=request.json["last_name"]
             student["job"]=request.json["job"]
             stud = student
-    return jsonify({'student':stud}),202 
+    return jsonify({'student':stud}),202
 
 #DELETE Method by stuent id
 @app.route('/api/students/<int:student_id>',methods=["DELETE"])
@@ -61,7 +61,7 @@ def delete_student(student_id):
             message = 'student with id '
             return jsonify({'message':message}),203
     return jsonify({'message':'stiudent not found'}),303
-            
+
 
 
 @app.errorhandler(404)
@@ -70,4 +70,3 @@ def not_found(error):
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0")
-    
